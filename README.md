@@ -1,2 +1,2 @@
-tslint --project tsconfig.json --type-check
 # hackerrankjs
+tslint --project tsconfig.json --type-check
