@@ -2,7 +2,7 @@
   "name": "hackerrank-typescript",
   "version": "1.0.0",
   "dependencies": {
-    "@types/node": "^7.0.38",
+    "@types/node": "^8.0.14",
     "typescript": "^2.4.2",
     "tslint": "^5.5.0"
   }
