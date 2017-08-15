@@ -5,5 +5,9 @@
     "@types/node": "^8.0.14",
     "typescript": "^2.4.2",
     "tslint": "^5.5.0"
+  },
+  "scripts": {
+    "lint": "tslint --project tsconfig.json --type-check",
+    "compile": "tsc -p tsconfig.json"
   }
 }

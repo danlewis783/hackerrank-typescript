@@ -23,12 +23,12 @@ class CompareTheTriplets {
     const aArr: string[] = this.readLine().split(" ");
     const a0: number = parseInt(aArr[0], radix);
     const a1: number = parseInt(aArr[1], radix);
-    const a2: number = parseInt(aArr[2], radix);
+    const a2: number = parseInt(aArr[2], radix); //tslint:disable-line:no-magic-numbers
 
     const bArr: string[] = this.readLine().split(" ");
     const b0: number = parseInt(bArr[0], radix);
     const b1: number = parseInt(bArr[1], radix);
-    const b2: number = parseInt(bArr[2], radix);
+    const b2: number = parseInt(bArr[2], radix); //tslint:disable-line:no-magic-numbers
 
     const res: number[] = this.solve(a0, a1, a2, b0, b1, b2);
     console.log(res.join(" "));
@@ -38,8 +38,8 @@ class CompareTheTriplets {
 
   private solve: (a0: number, a1: number, a2: number, b0: number, b1: number, b2: number) => number[] =
   (a0: number, a1: number, a2: number, b0: number, b1: number, b2: number): number[] => {
-    let aScore = 0;
-    let bScore = 0;
+    let aScore: number = 0;
+    let bScore: number = 0;
     if (a0 > b0) {
       aScore++;
     } else if (b0 > a0) {
@@ -57,6 +57,7 @@ class CompareTheTriplets {
     } else if (b2 > a2) {
       bScore++;
     }
+
     return [aScore, bScore];
   }
 }
