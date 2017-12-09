@@ -29,6 +29,4 @@ class SimpleArraySum {
   }
 
   private readLine: () => string = (): string => this.inputStdinArr[this.inputCurrentLine++];
-
-  private simpleArraySum: (a: number, b: number) => number = (a: number, b: number): number => a + b;
 }
